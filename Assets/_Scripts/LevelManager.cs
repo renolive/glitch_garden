@@ -6,4 +6,8 @@ public class LevelManager : MonoBehaviour {
 	public void changeScene(string sceneName) {
 		SceneManager.LoadScene(sceneName);
 	}
+
+	public void quitGame() {
+	    print("Quit Game!");
+	}
 }
