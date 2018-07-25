@@ -16,6 +16,7 @@ public class MusicPlayer : MonoBehaviour {
 	void playSoundTrack (int track) {
 		player.clip = soundTracks[track];
 		player.Play();
+		player.volume = PlayerPrefsManager.GetMasterVolume();
 	}
 	#endregion
 
