@@ -1,0 +1,387 @@
+fileFormatVersion: 2
+guid: f274d99f91787e343b7c63dcf1d8ac6b
+timeCreated: 1532564585
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: npc_deimaginator__x1_walk_png_1354836023_0
+    21300002: npc_deimaginator__x1_walk_png_1354836023_1
+    21300004: npc_deimaginator__x1_walk_png_1354836023_2
+    21300006: npc_deimaginator__x1_walk_png_1354836023_3
+    21300008: npc_deimaginator__x1_walk_png_1354836023_4
+    21300010: npc_deimaginator__x1_walk_png_1354836023_5
+    21300012: npc_deimaginator__x1_walk_png_1354836023_6
+    21300014: npc_deimaginator__x1_walk_png_1354836023_7
+    21300016: npc_deimaginator__x1_walk_png_1354836023_8
+    21300018: npc_deimaginator__x1_walk_png_1354836023_9
+    21300020: npc_deimaginator__x1_walk_png_1354836023_10
+    21300022: npc_deimaginator__x1_walk_png_1354836023_11
+    21300024: npc_deimaginator__x1_walk_png_1354836023_12
+    21300026: npc_deimaginator__x1_walk_png_1354836023_13
+    21300028: npc_deimaginator__x1_walk_png_1354836023_14
+    21300030: npc_deimaginator__x1_walk_png_1354836023_15
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 133.3333
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: npc_deimaginator__x1_walk_png_1354836023_0
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 951
+        width: 83
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32.5, y: 44}
+        - {x: -41.5, y: 22}
+        - {x: -41.5, y: -13}
+        - {x: -32.5, y: -39}
+        - {x: -17.5, y: -44}
+        - {x: 31.5, y: -44}
+        - {x: 39.5, y: -41}
+        - {x: 41.5, y: -40}
+        - {x: 41.5, y: -10}
+        - {x: 0.5, y: 44}
+    - name: npc_deimaginator__x1_walk_png_1354836023_1
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 951
+        width: 83
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0.5, y: 44}
+        - {x: -29.5, y: 44}
+        - {x: -41.5, y: 33}
+        - {x: -41.5, y: -42}
+        - {x: -32.5, y: -44}
+        - {x: 26.5, y: -44}
+        - {x: 41.5, y: -39}
+        - {x: 41.5, y: -20}
+        - {x: 4.5, y: 38}
+    - name: npc_deimaginator__x1_walk_png_1354836023_2
+      rect:
+        serializedVersion: 2
+        x: 538
+        y: 952
+        width: 81
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -40.5, y: -27}
+        - {x: -35.5, y: -44}
+        - {x: 34.5, y: -44}
+        - {x: 40.5, y: -40}
+        - {x: 40.5, y: -16}
+        - {x: 0.5, y: 44}
+        - {x: -27.5, y: 44}
+        - {x: -40.5, y: 34}
+    - name: npc_deimaginator__x1_walk_png_1354836023_3
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 766
+        width: 80
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -33, y: 44.5}
+        - {x: -40, y: 35.5}
+        - {x: -40, y: -31.5}
+        - {x: -25, y: -44.5}
+        - {x: 40, y: -44.5}
+        - {x: 40, y: -3.5}
+        - {x: 18, y: 44.5}
+    - name: npc_deimaginator__x1_walk_png_1354836023_4
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 767
+        width: 79
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -39.5, y: 45}
+        - {x: -39.5, y: -4}
+        - {x: -26.5, y: -45}
+        - {x: 36.5, y: -45}
+        - {x: 39.5, y: -44}
+        - {x: 39.5, y: 22}
+        - {x: 6.5, y: 45}
+    - name: npc_deimaginator__x1_walk_png_1354836023_5
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 768
+        width: 79
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 39.5, y: -19}
+        - {x: 3.5, y: 44}
+        - {x: -26.5, y: 44}
+        - {x: -39.5, y: 22}
+        - {x: -39.5, y: -10}
+        - {x: -35.5, y: -44}
+        - {x: -4.5, y: -44}
+        - {x: -1.5, y: -42}
+        - {x: 36.5, y: -37}
+        - {x: 39.5, y: -33}
+    - name: npc_deimaginator__x1_walk_png_1354836023_6
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 584
+        width: 80
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 30, y: -20.5}
+        - {x: 6, y: 35.5}
+        - {x: 2, y: 42.5}
+        - {x: -28, y: 42.5}
+        - {x: -40, y: 18.5}
+        - {x: -40, y: -11.5}
+        - {x: -39, y: -16.5}
+        - {x: -28, y: -42.5}
+        - {x: 15, y: -42.5}
+        - {x: 34, y: -38.5}
+        - {x: 40, y: -34.5}
+        - {x: 40, y: -24.5}
+    - name: npc_deimaginator__x1_walk_png_1354836023_7
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 584
+        width: 81
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -24.5, y: 42}
+        - {x: -26.5, y: 40}
+        - {x: -40.5, y: 19}
+        - {x: -40.5, y: 7}
+        - {x: -32.5, y: 1}
+        - {x: -28.5, y: 0}
+        - {x: -32.5, y: -1}
+        - {x: -40.5, y: -12}
+        - {x: -40.5, y: -23}
+        - {x: -35.5, y: -42}
+        - {x: 38.5, y: -42}
+        - {x: 40.5, y: -37}
+        - {x: 40.5, y: -20}
+        - {x: 2.5, y: 42}
+    - name: npc_deimaginator__x1_walk_png_1354836023_8
+      rect:
+        serializedVersion: 2
+        x: 537
+        y: 584
+        width: 82
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -31, y: 41.5}
+        - {x: -41, y: 23.5}
+        - {x: -41, y: -41.5}
+        - {x: 41, y: -41.5}
+        - {x: 41, y: -9.5}
+        - {x: 15, y: 41.5}
+    - name: npc_deimaginator__x1_walk_png_1354836023_9
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 397
+        width: 82
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -41, y: -4}
+        - {x: -32, y: -41}
+        - {x: -32, y: -42}
+        - {x: 41, y: -42}
+        - {x: 41, y: 1}
+        - {x: 31, y: 42}
+        - {x: -34, y: 42}
+        - {x: -41, y: 28}
+    - name: npc_deimaginator__x1_walk_png_1354836023_10
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 394
+        width: 81
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 2.5, y: 44}
+        - {x: -32.5, y: 44}
+        - {x: -40.5, y: 24}
+        - {x: -40.5, y: 5}
+        - {x: -29.5, y: 2}
+        - {x: -18.5, y: 2}
+        - {x: -37.5, y: 1}
+        - {x: -32.5, y: -44}
+        - {x: 12.5, y: -44}
+        - {x: 40.5, y: -33}
+        - {x: 40.5, y: -23}
+        - {x: 38.5, y: -21}
+    - name: npc_deimaginator__x1_walk_png_1354836023_11
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 394
+        width: 79
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -26.5, y: 45}
+        - {x: -39.5, y: 23}
+        - {x: -39.5, y: -16}
+        - {x: -25.5, y: -45}
+        - {x: 22.5, y: -45}
+        - {x: 39.5, y: -43}
+        - {x: 39.5, y: -3}
+        - {x: 15.5, y: 45}
+    - name: npc_deimaginator__x1_walk_png_1354836023_12
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 209
+        width: 79
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -39.5, y: 44.5}
+        - {x: -39.5, y: -4.5}
+        - {x: -26.5, y: -44.5}
+        - {x: 39.5, y: -44.5}
+        - {x: 39.5, y: 28.5}
+        - {x: 11.5, y: 44.5}
+    - name: npc_deimaginator__x1_walk_png_1354836023_13
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 207
+        width: 80
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -31, y: 45.5}
+        - {x: -40, y: 36.5}
+        - {x: -40, y: -31.5}
+        - {x: -26, y: -45.5}
+        - {x: 40, y: -45.5}
+        - {x: 40, y: -7.5}
+        - {x: 15, y: 45.5}
+    - name: npc_deimaginator__x1_walk_png_1354836023_14
+      rect:
+        serializedVersion: 2
+        x: 539
+        y: 206
+        width: 80
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 9, y: 45.5}
+        - {x: -40, y: 45.5}
+        - {x: -40, y: -41.5}
+        - {x: -16, y: -45.5}
+        - {x: 8, y: -45.5}
+        - {x: 40, y: -38.5}
+        - {x: 40, y: 24.5}
+    - name: npc_deimaginator__x1_walk_png_1354836023_15
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 20
+        width: 82
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 15, y: 45}
+        - {x: -41, y: 45}
+        - {x: -41, y: -45}
+        - {x: 26, y: -45}
+        - {x: 37, y: -35}
+        - {x: 41, y: -30}
+        - {x: 41, y: 31}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
