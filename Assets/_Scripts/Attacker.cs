@@ -1,18 +1,45 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System;
+
+[RequireComponent (typeof(Rigidbody2D))]
 
 public class Attacker : MonoBehaviour {
-	[Range (0, 1)]public float WalkSpeed;
+	private float walkSpeed;
+	private GameObject target;
+	private Action onEmptyTarget = () => {};
 
-	#region Custom Methods
+	#region Custom Method
+	void checkTarget () {
+	    if (!target) {
+	    // TODO!! Colcoar no lizard uma callback para target destroy
+	        onEmptyTarget();
+	    }
+	}
+
 	void getComponentsFindObjects () {
-		// Add a kinematic rigidBody to attackers
-		Rigidbody2D rb = gameObject.AddComponent<Rigidbody2D>();
-		rb.isKinematic = true;
+	}
+
+	public void SetOnEmptyTarget(Action handleEmptyTarget) {
+		onEmptyTarget = handleEmptyTarget;
+	}
+	public void SetTarget (GameObject target) {
+	    this.target = target;
+	}
+	public void SetWalkSpeed(float speed) {
+	    walkSpeed = speed;
+	}
+
+	public void StrikeTarget (float damage) {
+	    if (target) {
+			print("attacking "+ target.name+ " with "+ damage);
+			Health targetHealth = target.GetComponent<Health>();
+			targetHealth.TakeDamage(damage);
+	    }
 	}
 
 	void walkLeft() {
-		float deltaSpace = Time.deltaTime * WalkSpeed;
+		float deltaSpace = Time.deltaTime * walkSpeed;
 		transform.Translate(Vector2.left * deltaSpace);
 	}
 	#endregion
@@ -24,5 +51,6 @@ public class Attacker : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		walkLeft();
+		checkTarget();
 	}
 }
