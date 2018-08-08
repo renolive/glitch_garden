@@ -3,7 +3,6 @@ using System.Collections;
 using System;
 
 [RequireComponent (typeof(Rigidbody2D))]
-
 public class Attacker : MonoBehaviour {
 	private float walkSpeed;
 	private GameObject target;
@@ -12,7 +11,6 @@ public class Attacker : MonoBehaviour {
 	#region Custom Method
 	void checkTarget () {
 	    if (!target) {
-	    // TODO!! Colcoar no lizard uma callback para target destroy
 	        onEmptyTarget();
 	    }
 	}
