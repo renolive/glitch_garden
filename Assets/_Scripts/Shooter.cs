@@ -2,19 +2,12 @@
 using System.Collections;
 
 public class Shooter : MonoBehaviour {
-	private ProjectileShooter ps;
+	public ProjectileShooter ProjectileGun;
 
 	#region Custom Methods
-	void getComponentsAndObjects() {
-		ps = transform.Find("ProjectileShooter").GetComponent<ProjectileShooter>();
-	}
-
 	void shootProjectile() {
-		ps.FireProjectile();
+		ProjectileGun.FireProjectile();
 	}
 	#endregion
-	// Use this for initialization
-	void Start () {
-		getComponentsAndObjects();
-	}
 }
+	
