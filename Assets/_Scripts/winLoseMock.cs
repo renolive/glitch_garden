@@ -10,7 +10,6 @@ public class winLoseMock : MonoBehaviour {
 
 	void Start () {
 	    getComponentsFindObjects();
-	    print("Screen"+ Screen.width);
 	}
 
 	void OnGUI () {

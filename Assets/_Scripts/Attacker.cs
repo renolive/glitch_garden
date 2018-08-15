@@ -30,7 +30,6 @@ public class Attacker : MonoBehaviour {
 
 	public void StrikeTarget (float damage) {
 	    if (target) {
-			print("attacking "+ target.name+ " with "+ damage);
 			Health targetHealth = target.GetComponent<Health>();
 			targetHealth.TakeDamage(damage);
 	    }

@@ -9,7 +9,6 @@ public class Shredder : MonoBehaviour {
 	}
 
 	void OnTriggerEnter2D (Collider2D other) {
-		print("other"+ other);
 		Destroy(other.gameObject);
 	}
 }

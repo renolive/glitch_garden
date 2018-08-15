@@ -18,7 +18,6 @@ public class DifficultyController : MonoBehaviour {
 
 	public void SaveDifficulty () {
 		PlayerPrefsManager.SetDifficulty((int)slider.value);
-		print(PlayerPrefsManager.GetDifficulty());
 	}
 
 	public void SetDefaultDifficulty () {

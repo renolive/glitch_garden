@@ -11,7 +11,6 @@ public class Health : MonoBehaviour {
 	public void TakeDamage (float damage) {
 		remainingHealth -= damage;
 
-		print("!!Taking Damage "+ name+ " "+ remainingHealth);
 		// If is dead
 		if (remainingHealth <= 0) {
 			Destroy(gameObject);
