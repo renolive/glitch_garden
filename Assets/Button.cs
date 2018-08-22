@@ -5,6 +5,9 @@ public class Button : MonoBehaviour {
 	private SpriteRenderer sp;
 	private Button[] defendersButtons;
 
+	public static GameObject selectedDefender {get;set;}
+	public GameObject defenderPrefab;
+
 	#region Custom Methods
 	void getComponentsAndObjects () {
 		sp = GetComponent<SpriteRenderer>();
@@ -19,6 +22,13 @@ public class Button : MonoBehaviour {
 		// highlights the selected defender
 		sp.color = Color.white;
 	}
+
+	void handleButtonClick() {
+		highlightsClickedButton();
+		selectedDefender = defenderPrefab;
+		print(selectedDefender);
+	}
+
 	#endregion
 
 	// Use this for initialization
@@ -27,6 +37,6 @@ public class Button : MonoBehaviour {
 	}
 
 	void OnMouseDown () {
-		highlightsClickedButton();
+		handleButtonClick();
 	}
 }
