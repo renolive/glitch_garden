@@ -28,7 +28,6 @@ public class Button : MonoBehaviour {
 		selectedDefender = defenderPrefab;
 		print(selectedDefender);
 	}
-
 	#endregion
 
 	// Use this for initialization
