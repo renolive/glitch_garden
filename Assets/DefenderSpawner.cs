@@ -21,7 +21,8 @@ public class DefenderSpawner : MonoBehaviour {
 	void instantiateDefender(Vector3 pos) {
 		// Only instantiate static var Button.selectedDefender has a defender
 		if (Button.selectedDefender){
-			Instantiate(Button.selectedDefender, pos, Quaternion.identity);
+			GameObject newDefender = Instantiate(Button.selectedDefender, pos, Quaternion.identity) as GameObject;
+			newDefender.transform.parent = defendersParent.transform;
 		} 
 	}
 	#endregion
