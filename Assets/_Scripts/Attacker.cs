@@ -4,9 +4,13 @@ using System;
 
 [RequireComponent (typeof(Rigidbody2D))]
 public class Attacker : MonoBehaviour {
+
 	private float walkSpeed;
 	private GameObject target;
 	private Action onEmptyTarget = () => {};
+
+	[Tooltip ("Average number of seconds between appearances")]
+	public float seenEverySeconds;
 
 	#region Custom Method
 	void checkTarget () {
