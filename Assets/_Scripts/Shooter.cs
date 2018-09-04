@@ -1,5 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
+using System.Linq;
 
 public class Shooter : MonoBehaviour {
 	private Animator anim;
@@ -28,7 +30,12 @@ public class Shooter : MonoBehaviour {
 	}
 
 	bool laneHasEnemy() {
-	    return false;
+	    Attacker[] attackers = GameObject.FindObjectsOfType<Attacker>();
+		Debug.Log("11111111111111 -------- "+ attackers.Length);
+
+	    Attacker hasAttacker = attackers.First(a => a.transform.position.y == transform.position.y);
+	    Debug.Log("shdfdfsdf "+ hasAttacker + !!hasAttacker);
+	    return !!hasAttacker;
 	}
 
 	void verifyEnemiesInLane() {
