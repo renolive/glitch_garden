@@ -5,7 +5,7 @@ using System.Linq;
 
 public class Shooter : MonoBehaviour {
 	private Animator anim;
-	private Spawner sp;
+	private Spawner laneSpawner;
 
 	public ProjectileShooter ProjectileGun;
 
@@ -13,7 +13,7 @@ public class Shooter : MonoBehaviour {
 	void getComponentsAndObjects ()
 	{
 		anim = gameObject.GetComponent<Animator>();
-		sp = getSpawnerInLane(transform.position.y);
+		laneSpawner = getSpawnerInLane(transform.position.y);
 	}
 
 	/**
@@ -30,12 +30,13 @@ public class Shooter : MonoBehaviour {
 	}
 
 	bool laneHasEnemy() {
-	    Attacker[] attackers = GameObject.FindObjectsOfType<Attacker>();
-		Debug.Log("11111111111111 -------- "+ attackers.Length);
-
-	    Attacker hasAttacker = attackers.First(a => a.transform.position.y == transform.position.y);
-	    Debug.Log("shdfdfsdf "+ hasAttacker + !!hasAttacker);
-	    return !!hasAttacker;
+		// Check if the laneSpawner has children and if one of them is ahead the shooter
+		if (laneSpawner.transform.childCount > 0) {
+			foreach(Transform child in laneSpawner.transform) {
+				if (child.position.x > transform.position.x) { return true; }
+			}
+		}
+		return false;
 	}
 
 	void verifyEnemiesInLane() {
