@@ -4,11 +4,13 @@ using System.Collections;
 public class DefenderSpawner : MonoBehaviour {
 	private Camera cam;
 	private GameObject defendersParent;
+	private StarDisplay starDisplay;
 
 	#region CustomMethods
 	void getComponentsAndObjects () {
 		cam = Camera.main;
 		defendersParent = GameObject.Find("Defenders");
+		starDisplay = GameObject.FindObjectOfType<StarDisplay>();
 	}
 
 	void getPositionInWorldUnits() {
@@ -19,11 +21,16 @@ public class DefenderSpawner : MonoBehaviour {
 	}
 
 	void instantiateDefender(Vector3 pos) {
-		// Only instantiate static var Button.selectedDefender has a defender
-		if (Button.selectedDefender){
-			GameObject newDefender = Instantiate(Button.selectedDefender, pos, Quaternion.identity) as GameObject;
-			newDefender.transform.parent = defendersParent.transform;
-		} 
+	    Defender selectedDefender = Button.selectedDefender.GetComponent<Defender>();
+//	    int defenderCost = selectedDefender.GetComponent<Defender>();
+
+		// Instatiation conditions: have enough stars and a defender is selected in Button class
+		if (selectedDefender && starDisplay.UseStars(selectedDefender.Cost)){
+			GameObject defender = Instantiate(Button.selectedDefender, pos, Quaternion.identity) as GameObject;
+			defender.transform.parent = defendersParent.transform;
+		} else {
+			print ("You don't have enough stars");
+		}
 	}
 	#endregion
 

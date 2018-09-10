@@ -19,9 +19,6 @@ public class Attacker : MonoBehaviour {
 	    }
 	}
 
-	void getComponentsFindObjects () {
-	}
-
 	public void SetOnEmptyTarget(Action handleEmptyTarget) {
 		onEmptyTarget = handleEmptyTarget;
 	}
@@ -44,11 +41,7 @@ public class Attacker : MonoBehaviour {
 		transform.Translate(Vector2.left * deltaSpace);
 	}
 	#endregion
-	// Use this for initialization
-	void Start () {
-		getComponentsFindObjects();
-	}
-	
+
 	// Update is called once per frame
 	void Update () {
 		walkLeft();

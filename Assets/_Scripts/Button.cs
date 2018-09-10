@@ -26,7 +26,6 @@ public class Button : MonoBehaviour {
 	void handleButtonClick() {
 		highlightsClickedButton();
 		selectedDefender = defenderPrefab;
-		print(selectedDefender);
 	}
 	#endregion
 
