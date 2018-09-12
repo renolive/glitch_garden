@@ -7,6 +7,11 @@ public class LevelManager : MonoBehaviour {
 		SceneManager.LoadScene(sceneName);
 	}
 
+	public void nextScene() {
+	    int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+	    SceneManager.LoadScene(currentSceneIndex + 1);
+	}
+
 	public void quitGame() {
 	    print("Quit Game!");
 	}
