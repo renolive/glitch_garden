@@ -34,7 +34,7 @@ public class DifficultyController : MonoBehaviour {
 	void Start () {
 		getComponentsFindObjects();
 		addEventsListeners();
-		setDifficulty(PlayerPrefsManager.GetDifficulty()); // Initial volume
+		setDifficulty(PlayerPrefsManager.GetDifficulty()); // Initial difficulty
 	}
 
 	void OnGUI () {

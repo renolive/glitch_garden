@@ -1,13 +1,14 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
+using System;
 
 public class LevelTimer : MonoBehaviour {
 	private Slider slider;
 	private LevelManager lm;
-	private float elapsedTime=0 ;
 
 	public float TotalTime;
+	public AudioClip FinishLevelAudio;
 
 	#region CustomMethods
 	void GetComponentsAndObjects ()
@@ -16,25 +17,34 @@ public class LevelTimer : MonoBehaviour {
 		lm = GameObject.Find("Level Manager").GetComponent<LevelManager>();
 	}
 
-	void UpdateTimer () {
-	    elapsedTime += Time.deltaTime;
-	    slider.value = elapsedTime/TotalTime;
+	IEnumerator UpdateTimer() {
+		while(true) {
+			slider.value = Time.timeSinceLevelLoad/TotalTime;
+			if (slider.value >= 1) {
+				TimerFinished();
+				break;
+			}
+			yield return null;
+		}
+	}
 
-	    if (slider.value >= 1) {
-	        TimerFinished();
-	    }
+	void NextLevel() {
+		lm.nextScene();
 	}
 
 	void TimerFinished () {
-	    lm.nextScene();
+		print ("sdfjdlfjsdf");
+		AudioSource.PlayClipAtPoint(FinishLevelAudio, transform.position);
+		Invoke("NextLevel", 1);
 	}
 	#endregion
 
 	void Start () {
 		GetComponentsAndObjects();
+		StartCoroutine("UpdateTimer");
 	}
 	
 	void Update () {
-		UpdateTimer();
+//		UpdateTimer();
 	}
 }
