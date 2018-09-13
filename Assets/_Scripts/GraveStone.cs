@@ -9,9 +9,12 @@ public class GraveStone : MonoBehaviour {
 	    anim = GetComponent<Animator>();
 	}
 
-	IEnumerator handleUnderAttack (GameObject other) {
-	    print ("animartot"+ anim);
-	    yield return null;
+	IEnumerator handleUnderAttack (Collider2D other) {
+		anim.SetBool("underAttack", true);
+		while (other.isActiveAndEnabled){
+			yield return new WaitForSeconds(.1f);
+		}
+		anim.SetBool("underAttack", false);
 	}
 	#endregion
 
@@ -19,8 +22,9 @@ public class GraveStone : MonoBehaviour {
 		GetComponentsAndObjects();
 	}
 
-	void OnTriggerStay2D (Collider2D other) {
-	    if (other.GetComponent<Attacker>())
-			StartCoroutine(handleUnderAttack(other.gameObject));
+	void OnTriggerEnter2D (Collider2D other) {
+		if (other.GetComponent<Attacker>()) {
+			StartCoroutine(handleUnderAttack(other));
+		}
 	}
 }

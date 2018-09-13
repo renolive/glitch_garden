@@ -1,9 +1,11 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 using System.Collections;
 
 public class Button : MonoBehaviour {
 	private SpriteRenderer sp;
 	private Button[] defendersButtons;
+	private Text cost;
 
 	public static GameObject selectedDefender {get;set;}
 	public GameObject defenderPrefab;
@@ -12,6 +14,7 @@ public class Button : MonoBehaviour {
 	void getComponentsAndObjects () {
 		sp = GetComponent<SpriteRenderer>();
 		defendersButtons = GameObject.FindObjectsOfType<Button>();
+		cost = GetComponentInChildren<Text>();
 	}
 
 	void highlightsClickedButton() {
@@ -27,11 +30,18 @@ public class Button : MonoBehaviour {
 		highlightsClickedButton();
 		selectedDefender = defenderPrefab;
 	}
+
+	void SetCostDisplay() {
+		if (cost) {
+			cost.text = defenderPrefab.GetComponent<Defender>().Cost.ToString();
+		}
+	}
 	#endregion
 
 	// Use this for initialization
 	void Start () {
 		getComponentsAndObjects();
+		SetCostDisplay();
 	}
 
 	void OnMouseDown () {
