@@ -33,7 +33,6 @@ public class LevelTimer : MonoBehaviour {
 	}
 
 	void TimerFinished () {
-		print ("sdfjdlfjsdf");
 		AudioSource.PlayClipAtPoint(FinishLevelAudio, transform.position);
 		Invoke("NextLevel", 1);
 	}
@@ -42,9 +41,5 @@ public class LevelTimer : MonoBehaviour {
 	void Start () {
 		GetComponentsAndObjects();
 		StartCoroutine("UpdateTimer");
-	}
-	
-	void Update () {
-//		UpdateTimer();
 	}
 }

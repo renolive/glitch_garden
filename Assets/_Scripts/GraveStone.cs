@@ -2,14 +2,25 @@
 using System.Collections;
 
 public class GraveStone : MonoBehaviour {
+	private Animator anim;
 
-	// Use this for initialization
-	void Start () {
-	
+	#region CustomMethods
+	void GetComponentsAndObjects () {
+	    anim = GetComponent<Animator>();
 	}
-	
-	// Update is called once per frame
-	void Update () {
-	
+
+	IEnumerator handleUnderAttack (GameObject other) {
+	    print ("animartot"+ anim);
+	    yield return null;
+	}
+	#endregion
+
+	void Start () {
+		GetComponentsAndObjects();
+	}
+
+	void OnTriggerStay2D (Collider2D other) {
+	    if (other.GetComponent<Attacker>())
+			StartCoroutine(handleUnderAttack(other.gameObject));
 	}
 }
